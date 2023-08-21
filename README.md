@@ -27,9 +27,7 @@ o Ensemble GCM, RCP 8.5, end of century (2081-2100): ‘SPECIES COMMON NAME_BC_9
 Spreadsheets
 
 1. ‘SPECIES COMMON NAME_FullExtent_accessible_data_preds_PresentConditions_072023.csv’
-These CSVs contain presence-absence identification and environmental variables used to fit models for accessible reaches across the full study extent, as well as model outputs.
-
-Model predictions were mapped by first converting the prediction value of interest to a raster (by snapping to a related environmental raster), extracting    the values to the related ‘midpoints’ network file, and then joining to the ‘reaches’ file.
+These CSVs contain presence-absence identification and environmental variables used to fit models for accessible reaches across the full study extent, as well as model outputs.Model predictions were mapped by first converting the prediction value of interest to a raster (by snapping to a related environmental raster), extracting the values to the related ‘midpoints’ network file, and then joining to the ‘reaches’ file.
 
 Column names are:
 ‘Presence’ – presence/absence identification
