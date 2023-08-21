@@ -29,7 +29,7 @@ Spreadsheets
 1. ‘SPECIES COMMON NAME_FullExtent_accessible_data_preds_PresentConditions_072023.csv’
 These CSVs contain presence-absence identification and environmental variables used to fit models for accessible reaches across the full study extent, as well as model outputs.
 
-Model predictions were mapped by first converting the prediction value of interest to a raster (by snapping to a related environmental raster), extracting the values to the related ‘midpoints’ network file, and then joining to the ‘reaches’ file.
+Model predictions were mapped by first converting the prediction value of interest to a raster (by snapping to a related environmental raster), extracting    the values to the related ‘midpoints’ network file, and then joining to the ‘reaches’ file.
 
 Column names are:
 ‘Presence’ – presence/absence identification
@@ -49,7 +49,7 @@ Column names are:
 ‘BART_Fav’ – favourability predictions from Bayesian Additive Regression Trees
 ‘GBM_Fav’ – favourability predictions from Generalized Boosted Models
 
-3. ‘SPECIES COMMON NAME_Proj_all_FavChange_GBM_072023.csv’
+2. ‘SPECIES COMMON NAME_Proj_all_FavChange_GBM_072023.csv’
 These CSVs contain probability and favourability values from Generalized Boosted Models projected under different climate change scenarios and time steps.
 Model predictions were mapped by first converting the prediction value of interest to a raster (by snapping to a related environmental raster), extracting the values to the related ‘midpoints’ network file, and then joining to the ‘reaches’ file.
 
