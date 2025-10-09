@@ -1,6 +1,6 @@
 # Salmon-ENMs-2023
 
-Data from: Iacarella, JC and Weller, JD (2023) Predicting favourable streams for anadromous salmon spawning and natal rearing under climate change. 
+Data from: Iacarella, JC and Weller, JD (2023) Predicting favourable streams for anadromous salmon spawning and natal rearing under climate change.
 Canadian Journal of Fisheries and Aquatic Sciences, see CJFAS for volume and page numbers.
 
 Please see the paper for method explanations.
@@ -11,24 +11,33 @@ Geodatabases:
 This geodatabase contains the freshwater network used for fitting Environmental Niche Models to predict salmon spawning habitat in BC and western US salmon bearing watersheds.
 ‘Reaches’ are the linear features, and ‘midpoints’ are the central points of each reach. See shapefile metadata for attribute details.
 
-The ‘midpoints’ file was used to make environmental rasters. These rasters were then used in modeling, and later for remapping the model outputs.
+The ‘midpoints’ file was used to make environmental rasters. These rasters were then used in modeling, and later for remapping the model outputs. 
 
 2. ‘Salmon_spawning_occurrence.gdb’
 Stream reach-level observations of spawning locations for each salmon species, appended to the midpoints (i.e. central points) of the stream reaches.
 
 3. ‘BC_network_variables_climateproj.gdb’
 This geodatabase contains the freshwater network used for model projections in BC salmon bearing watersheds.
-‘Reaches’ are the linear features, and ‘midpoints’ are the central points of each reach. See shapefile metadata for attribute details.
+‘Reaches’ are the linear features, and ‘midpoints’ are the central points of each reach.
+See shapefile metadata for attribute details.
 
 The ‘midpoints’ file was used to make environmental rasters. These rasters were then used in modeling, and later for remapping the model outputs.
 
-4. ‘Mapped_model_predictions.gdb’
+4. ‘Mapped_model_predictions.gdb’ - comparing favourability from 1981-2000 to 2081-2100
 • Generalized Boosted Model favourability predictions for each species’ extent, accessible reaches only, baseline conditions: ‘Species common name_GBMFav_streams_acc’
 • Generalized Boosted Model change in favourability predictions for BC streams reaches within salmon bearing watersheds, comparing favourability from 1981-2000 to 2081-2100
 under three climate change scenarios:
 o   Ensemble GCM, RCP 2.6, end of century (2081-2100): ‘SPECIES COMMON NAME_BC_9_26_5’
 o   Ensemble GCM, RCP 4.5, end of century (2081-2100): ‘SPECIES COMMON NAME_BC_9_45_5’
 o   Ensemble GCM, RCP 8.5, end of century (2081-2100): ‘SPECIES COMMON NAME_BC_9_85_5’
+
+5. GBM favourability prediction gdbs (see below for naming conventions) – RASTERVALU in the attribute table is the predicted favourability
+o   Baseline_accessible streams.gdb’ – 1981-2000, accessible streams only
+o   Current_2001to2020_all streams.gdb’ – all streams (4th order and higher)
+o   'Future_RCP45_2041to2060_all streams.gdb’
+o   ‘Future_RCP45_2081to2100_allstreams.gdb’
+o   ‘Future_RCP85_2041to2060_allstreams.gdb’
+o   ‘Future_RCP85_2081to2100_allstreams.gdb’
 
 Spreadsheets
 1. ‘SPECIES COMMON NAME_FullExtent_accessible_data_preds_PresentConditions_072023.csv’
